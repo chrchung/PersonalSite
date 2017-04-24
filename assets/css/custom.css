@@ -1,0 +1,24 @@
+@font-face {
+    font-family: raleway-bold;
+    src: url(../fonts/raleway/Raleway-bold.ttf);
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 100%;
+}
+
+header .container {
+	display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: raleway-bold;
+}
