@@ -39,9 +39,12 @@ body {
 }
 
 .bg-blue-green {
-	background-color: #65dfe2;
+	background-color: #59d6e3;
 }
 
+.blue-green {
+	color: #59d6e3;
+}
 .raleway-bold {
 	font-family: raleway-bold;
 }
@@ -65,7 +68,10 @@ a {
 
 header {
 	width: 100%;
-	height: 100%;
+	padding: 20vh 25% 0% 25%;
+
+/*	background-image: url(../images/pop.png);
+	background-size: cover;*/
 }
 
 header .container {
@@ -73,8 +79,12 @@ header .container {
     width: 100%;
     height: 100%;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+/*    flex-direction: column;
+*/    align-items: center;
+}
+
+header .container .flexitem {
+	margin: 1%;
 }
 
 header .container .f4 {
@@ -83,46 +93,44 @@ header .container .f4 {
 
 header .container .f6 {
 	font-family: raleway-light;
-	text-align: center;
 }
 
-header .container div {
-	margin: 1% 20% 0% 20%;
-}
+header .container .text {
+/*	text-align: center;
+*//*	margin: 1% 25% 0% 25%;
+*/}
 
 #profile-photo {
-	width: 30%;
-	max-width: 150px;
-}
+	width: 50%;
+/*	max-width: 150px;
+*/}
 
 
 #projects {
 /*	width: 100%;
 	height: 100%;*/
-	padding: 10% 20% 0% 20%;
+	padding: 5% 25% 0% 25%;
 }
 
 #projects .projects-container {
 	display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
 
 #projects .projects-container .project {
-	margin: 1%;
-	width: 48%;
-	height: 60vh;
-	padding: 5%;
+	width: 47%;
+	max-height: 50vh;
+	margin-bottom: 3%;
 }
 
 #projects .projects-container .project img {
 	object-fit: cover;
 	width: 100%;
-	height: 50%;
-	margin-bottom: 3%;
+	height: 25vh;
+	
 }
 
 #projects .projects-container .project .project-text{
@@ -139,7 +147,7 @@ header .container div {
 }
 
 #publications {
-	padding: 10% 20% 0% 20%;
+	padding: 5% 25% 0% 25%;
 }
 
 #publications .container {
@@ -147,7 +155,7 @@ header .container div {
 }
 
 #artwork {
-	padding: 10% 20% 0% 20%;
+	padding: 5% 25% 10% 25%;
 	min-height: 100%;
 }
 
@@ -163,16 +171,17 @@ header .container div {
 }
 
 
-#artwork .artwork-container div {
+#artwork .artwork-container .container {
 	width: 50%;
-	cursor: pointer;
+	text-align: center;
+	height: 20vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
 footer {
-	padding: 2% 20% 2% 20%;
+	padding: 2% 25% 2% 25%;
 }
 
 footer .f6 {
@@ -186,8 +195,13 @@ footer .container {
 
 #nav-bar {
 	display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 5vh;
+    z-index: 1;
 }
 
 #nav-bar > div {
@@ -196,32 +210,112 @@ footer .container {
 	font-family: raleway-bold;
 }
 
-@media only screen and (max-width: 800px) {
-	header .container div {
-		margin: 1% 10% 0% 10%;
-	}
+#nav-bar > a {
+	padding: 1%;
+	cursor: pointer;
+	font-family: raleway-bold;
+}
 
-	#projects {
-		padding: 10% 10% 0% 10%;
-	}
-
-	#publications {
-		padding: 10% 10% 0% 10%;
-	}
-
-	#artwork {
-		padding: 10% 10% 0% 10%;
-	}
-
-	footer {
-		padding: 2% 10% 2% 10%;
-	}
-
-
+footer i {
+	margin: 1%;
 }
 
 
+@media only screen and (max-width: 1200px) {
+
+/*
+	header .container {
+		flex-direction: column;
+	}*/
+
+	header {
+		padding: 20vh 20% 0 20%;
+	}
+
+	#projects {
+		padding: 10% 20% 0% 20%;
+	}
+
+	#publications {
+		padding: 10% 20% 0% 20%;
+	}
+
+	#artwork {
+		padding: 10% 20% 10% 20%;
+	}
+
+	footer {
+		padding: 2% 20% 2% 20%;
+	}
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+/*
+	header .container {
+		flex-direction: column;
+	}*/
+
+	header {
+		padding: 20vh 15% 0 15%;
+	}
+
+	#projects {
+		padding: 10% 15% 0% 15%;
+	}
+
+	#publications {
+		padding: 10% 15% 0% 15%;
+	}
+
+	#artwork {
+		padding: 10% 15% 10% 15%;
+	}
+
+	footer {
+		padding: 2% 15% 2% 15%;
+	}
+}
+
+
+@media only screen and (max-width: 800px) {
+	header {
+		padding: 20vh 5% 0 5%;
+	}
+
+	#projects {
+		padding: 10% 5% 0% 5%;
+	}
+
+	#publications {
+		padding: 10% 5% 0% 5%;
+	}
+
+	#artwork {
+		padding: 10% 5% 10% 5%;
+	}
+
+	footer {
+		padding: 2% 5% 2% 5%;
+	}
+}
+
+
+
 @media only screen and (max-width: 600px) {
+	header .container {
+		flex-direction: column;
+	}
+	
+	header #profile-photo {
+		width: 100%;
+	}
+
+	header {
+		padding: 15vh 10% 0% 10%;
+	}
+
 	#projects .projects-container .project {
 		margin: 3%;
 		width: 97%;
@@ -244,6 +338,10 @@ footer .container {
 }
 
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-device-width: 480px) {
+	header {
+		padding: 15vh 10% 0% 10%;
+	}
+
 	#projects .projects-container .project {
 		margin: 3%;
 		width: 97%;

@@ -11,30 +11,53 @@
   	<link rel="stylesheet" type="text/css" href="assets/css/tachyons.min.css">
   	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+
+
+	<script>
+		$(document).ready(function() {
+		  $(window).scroll(function () { 
+
+		    console.log($(window).scrollTop());
+
+		    if ($(window).scrollTop() > 550) {
+		      $('#nav-bar').addClass('nav-bar-move');
+		    }
+
+		    if ($(window).scrollTop() < 551) {
+		      $('#nav-bar').removeClass('navbar-fixed-top');
+		    }
+		  });
+		});
+
+	</script>
 </head>
 
 <body>
-	<div id="nav-bar" class="f5 bb b--white bg-blue-green white">
+	<div id="nav-bar" class="f5 bb bw1 bg-white bb-white b--black black">
 		<div>About</div>
 		<div>Research</div>
 		<div>Publications</div>
-		<div>Artwork</div>
-		<div>Resume</div>
+		<div>Art</div>
 		<div>Contact</div>
+		<a href="assets/docs/ChristinaChungCV.pdf" target="_blank" class="black">CV</a>
 	</div>
 
-	<header class="bg-blue-green">
+	<header class="">
 		<div class="container">
-			<img src="assets/images/christina.jpeg" id="profile-photo" class="br-100 b--solid bw2 grow"/>
-			<div class="measure-wide f4">
-				Hi! I'm Christina.
-			</div>
-			<div class="measure-wide f6">
-				I am a senior computer science student at the University of Toronto. My interests lie in human-computer interaction. Specifically, through technology, I want to improve other people’s lives. Whether it is something small such as lending someone a pen, or something larger that touches the lives of many, it is this desire to help others that has played a large role in many of my involvements. I hope to go on to graduate school for this purpose.<br><br>
+			<img src="assets/images/christina.jpeg" id="profile-photo" class="flexitem"/>
+			<div class="text flexitem">
+				<div class="f4">
+					Hi! I'm Christina Chung.
+				</div>
+				<div class="f6 br3">
+					I am a senior computer science student at the University of Toronto. My interests lie in human-computer interaction. Specifically, through technology, I want to improve other people’s lives. Whether it is something small such as lending someone a pen, or something larger that touches the lives of many, it is this desire to help others that has played a large role in many of my involvements. I hope to go on to graduate school for this purpose.<br><br>
 
-				Outside of school, I like to draw. I work with a variety of mediums &#8212 pencil, pen, watercolors, digital; and have a penchant for cute blob creatures and anime characters. I have an unhealthy addition to watching YouTube videos (darn personalized content).
+					Outside of school, I like to draw. I work with a variety of mediums &#8212 pencil, pen, watercolors, digital; and have a penchant for cute blob creatures and anime characters. I have an unhealthy addition to watching YouTube videos (darn personalized content).
+				</div>
 			</div>
+
 		</div>
 	
 	</header>
@@ -51,18 +74,18 @@
 						Serious Games for NP-hard Problems
 					</div>
 					<div class="f6">
-						N-way matching is the process of combining multiple software models into one. The problem has pratical importance in software engineering, yet computing it's optimal solution is NP-hard. <a href="matchmakers.herokuapp.com" class="dark-blue raleway-bold">Matchmakers</a> is a game that empowers the crowd to solve n-way matching.
+						N-way matching is the process of combining multiple software models into one. The problem has pratical importance in software engineering, yet computing it's optimal solution is NP-hard. <a href="matchmakers.herokuapp.com" class="blue-green raleway-bold">Matchmakers</a> is a game that empowers the crowd to solve n-way matching.
 					</div>
 				</div>
 			</div>
 			<div class="project br3 bg-white">
-				<img src="assets/images/virtualreality.jpg" class="grow"/>
+				<img src="assets/images/virtualreality.gif" class="grow"/>
 				<div class="project-text">
 					<div class="f3">
 						Presence in Virtual Environments
 					</div>
 					<div class="f6">
-						N-way matching is the process of combining multiple software models into one. The problem has pratical importance in software engineering, yet computing it's optimal solution is NP-hard. <a href="matchmakers.herokuapp.com" class="dark-blue raleway-bold">Matchmakers</a> is a game that empowers the crowd to solve n-way matching.
+						N-way matching is the process of combining multiple software models into one. The problem has pratical importance in software engineering, yet computing it's optimal solution is NP-hard. <a href="matchmakers.herokuapp.com" class="blue-green raleway-bold">Matchmakers</a> is a game that empowers the crowd to solve n-way matching.
 					</div>
 				</div>
 			</div>
@@ -73,7 +96,7 @@
 						Color Analysis in 19th Century English Novels
 					</div>
 					<div class="f6">
-						N-way matching is the process of combining multiple software models into one. The problem has pratical importance in software engineering, yet computing it's optimal solution is NP-hard. <a href="matchmakers.herokuapp.com" class="dark-blue raleway-bold">Matchmakers</a> is a game that empowers the crowd to solve n-way matching.
+						N-way matching is the process of combining multiple software models into one. The problem has pratical importance in software engineering, yet computing it's optimal solution is NP-hard. <a href="matchmakers.herokuapp.com" class="blue-green raleway-bold">Matchmakers</a> is a game that empowers the crowd to solve n-way matching.
 					</div>
 				</div>
 			</div>
@@ -84,7 +107,7 @@
 						Exploring Drug Networks
 					</div>
 					<div class="f6">
-						N-way matching is the process of combining multiple software models into one. The problem has pratical importance in software engineering, yet computing it's optimal solution is NP-hard. <a href="matchmakers.herokuapp.com" class="dark-blue raleway-bold">Matchmakers</a> is a game that empowers the crowd to solve n-way matching.
+						N-way matching is the process of combining multiple software models into one. The problem has pratical importance in software engineering, yet computing it's optimal solution is NP-hard. <a href="matchmakers.herokuapp.com" class="blue-green raleway-bold">Matchmakers</a> is a game that empowers the crowd to solve n-way matching.
 					</div>
 				</div>
 			</div>
@@ -98,15 +121,15 @@
 		</div>
 		<div class="f6">
 			<p>
-				Nehme El-Hachem, Deena M.A. Gendoo, Laleh Soltan Ghoraie, Zhaleh Safikhani, Petr Smirnov, <span class="raleway-bold">Chung C.</span>, Kenan Deng, Ailsa Fang, Erin Birkwood, Chantal Ho, Ruth Isserlin, Gary D. Bader, Anna Goldenberg, Benjamin Haibe-Kains. <span class="raleway-italics">Integrative pharmacogenomics to infer large-scale drug taxonomy. Cancer Research</span>. 2017. [<a href="http://cancerres.aacrjournals.org/content/early/2017/03/17/0008-5472.CAN-17-0096" class="dark-blue raleway-bold">Link</a>]
+				Nehme El-Hachem, Deena M.A. Gendoo, Laleh Soltan Ghoraie, Zhaleh Safikhani, Petr Smirnov, <span class="raleway-bold">Chung C.</span>, Kenan Deng, Ailsa Fang, Erin Birkwood, Chantal Ho, Ruth Isserlin, Gary D. Bader, Anna Goldenberg, Benjamin Haibe-Kains. <span class="raleway-italics">Integrative pharmacogenomics to infer large-scale drug taxonomy. Cancer Research</span>. 2017. <a href="http://cancerres.aacrjournals.org/content/early/2017/03/17/0008-5472.CAN-17-0096" class="blue-green raleway-bold">[Link]</a>
 			</p>
 
 			<p>
-				<span class="raleway-bold">Chung C.</span>, Matsuoka A., Yang Y., Rubin J., Chechik M. <span class="raleway-italics">Serious Games for NP-hard Problems: Challenges and Insights</span>. GAS@ICSE’16. 2016. [<a href="http://dl.acm.org/citation.cfm?id=2896963" class="dark-blue raleway-bold">Link</a>]
+				<span class="raleway-bold">Chung C.</span>, Matsuoka A., Yang Y., Rubin J., Chechik M. <span class="raleway-italics">Serious Games for NP-hard Problems: Challenges and Insights</span>. GAS@ICSE’16. 2016. <a href="http://dl.acm.org/citation.cfm?id=2896963" class="blue-green raleway-bold">[Link]</a>
 			</p>
 
         	<p>
-        		<span class="raleway-bold">Chung C.</span>, Rubin J., Chechik M. <span class="raleway-italics">N-way Model Merging Game.</span> Review of Undergraduate Computer Science. 2015. [<a href="http://rucs.ca/software-engineering/n-way-model-merging-game" class="dark-blue raleway-bold">Link</a>]
+        		<span class="raleway-bold">Chung C.</span>, Rubin J., Chechik M. <span class="raleway-italics">N-way Model Merging Game.</span> Review of Undergraduate Computer Science. 2015. <a href="http://rucs.ca/software-engineering/n-way-model-merging-game" class="blue-green raleway-bold">[Link]</a>
         	</p>
 
 		</div>
@@ -117,21 +140,28 @@
 			Artwork
 		</div>
 
-		<div class="artwork-container">
+		<div class="artwork-container bg-black">
 			<img src="assets/images/doodle1.jpg" class="dim"/>
 			<img src="assets/images/doodle2.jpg" class="dim"/>
 			<img src="assets/images/doodle3.jpg" class="dim"/>
 			<img src="assets/images/doodle4.jpg" class="dim"/>
 			<img src="assets/images/doodle5.jpg" class="dim"/>
-			<div class="f3 raleway-black-italics white">
-				<a href="https://www.instagram.com/chrchungg/" class="dark-blue grow">More on Instagram.</a>
+			<div class="container f3 raleway-black-italics white">
+				<div>
+					Visit my Instagram  <a href="https://www.instagram.com/chrchungg/" class="blue-green">@chrchungg!</a>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<footer class="">
 		<div class="container f6 bt">
-			<a href="mailto:cachungchristina@gmail.com?Subject=Hello" class="dark-blue raleway-bold">cachungchristina@gmail.com</a>
+			<a href="mailto:cachungchristina@gmail.com?Subject=Hello" class="blue-green raleway-bold">cachungchristina@gmail.com</a>
+			<div>
+				<a href="https://www.linkedin.com/in/chrchung/"><i class="black fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://github.com/chrchung"><i class="black fa fa-2x fa-github" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/chrchungg/"><i class="black fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+			</div>
 		</div>
 	</footer>
 </body>
