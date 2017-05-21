@@ -28,6 +28,11 @@
     src: url(../fonts/raleway/Raleway-Italic.ttf);
 }
 
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
 body {
 	width: 100vw;
 	height: 100vh;
@@ -66,9 +71,13 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #ff4136;
+}
+
 header {
 	width: 100%;
-	padding: 20vh 25% 0% 25%;
+	padding: 10vh 25% 0% 25%;
 
 /*	background-image: url(../images/pop.png);
 	background-size: cover;*/
@@ -207,13 +216,21 @@ footer .container {
 #nav-bar > div {
 	padding: 1%;
 	cursor: pointer;
-	font-family: raleway-bold;
+	font-family: roboto-regular;
+}
+
+#nav-bar > div:hover {
+	color: #ff4136;
 }
 
 #nav-bar > a {
 	padding: 1%;
 	cursor: pointer;
-	font-family: raleway-bold;
+	font-family: roboto-regular;
+}
+
+#nav-bar > a:hover {
+	color: #ff4136;
 }
 
 footer i {
@@ -229,7 +246,7 @@ footer i {
 	}*/
 
 	header {
-		padding: 20vh 20% 0 20%;
+		padding: 10vh 20% 0 20%;
 	}
 
 	#projects {
@@ -258,7 +275,7 @@ footer i {
 	}*/
 
 	header {
-		padding: 20vh 15% 0 15%;
+		padding: 10vh 15% 0 15%;
 	}
 
 	#projects {
@@ -281,7 +298,7 @@ footer i {
 
 @media only screen and (max-width: 800px) {
 	header {
-		padding: 20vh 5% 0 5%;
+		padding: 10vh 5% 0 5%;
 	}
 
 	#projects {
@@ -313,7 +330,7 @@ footer i {
 	}
 
 	header {
-		padding: 15vh 10% 0% 10%;
+		padding: 10vh 10% 0% 10%;
 	}
 
 	#projects .projects-container .project {
@@ -339,7 +356,7 @@ footer i {
 
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-device-width: 480px) {
 	header {
-		padding: 15vh 10% 0% 10%;
+		padding: 10vh 10% 0% 10%;
 	}
 
 	#projects .projects-container .project {
